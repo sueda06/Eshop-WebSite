@@ -13,16 +13,18 @@
     {
         if (item.Stock < 50)
         {
-            <tr style="background-color:red">
-                <td>@item.Name</td>
-                <td>@item.Stock</td>
+            <tr style="background-color: #c52d2d
+">
+                <td style="color: white;">@item.Name</td>
+                <td style="color: white;">@item.Stock</td>
             </tr>
         }
         if (item.Stock == 50)
         {
-            <tr style="background-color:yellow">
-                <td>@item.Name</td>
-                <td>@item.Stock</td>
+            <tr style="background-color: #e3c138
+">
+                <td style="color: black;">@item.Name</td>
+                <td style="color: black;">@item.Stock</td>
             </tr>
         }
     }
