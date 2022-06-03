@@ -136,6 +136,7 @@
     <Content Include="Content\image\sepet.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Dockerfile" />
     <Content Include="eshop\css\animate.css" />
     <Content Include="eshop\css\bootstrap.min.css" />
     <Content Include="eshop\css\font-awesome.min.css" />
@@ -271,6 +272,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roller\AdminRoleProvider.cs" />
+    <Compile Include="Seed\DatabaseSeedManager.cs" />
     <Compile Include="SeoUrl\Seo.cs" />
   </ItemGroup>
   <ItemGroup>

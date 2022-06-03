@@ -1,9 +1,8 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using DataAccessLayer.Context;
+using Shop.Seed;
 
 namespace Shop
 {
@@ -11,6 +10,11 @@ namespace Shop
     {
         protected void Application_Start()
         {
+            DataContext context = new DataContext();
+            if (!context.Users.Any())
+            {
+                    DatabaseSeedManager.Seed(context);
+            }
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
